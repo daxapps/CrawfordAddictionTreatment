@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CAT_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJa-EU-JEY">
+                                <rect key="frame" x="-4" y="20" width="383" height="44"/>
+                                <color key="barTintColor" red="0.36862745099999999" green="0.68235294120000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Crawford Addiction Treatment" id="6le-vA-DjK"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dna group photo cropped.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XEf-cb-VMb">
+                                <rect key="frame" x="-4" y="64" width="383" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="Gy2-yE-XRi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdR-Me-xix">
+                                <rect key="frame" x="20" y="201" width="335" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="afi-Th-f8a"/>
+                                    <constraint firstAttribute="width" constant="335" id="vb9-fm-Yur"/>
+                                </constraints>
+                                <string key="text">Crawford Addiction Treatment is an outpatient treatment facility designed to help patients fight pain medicine addiction and provide a superior patient experience.
+
+John Crawford, MD has over 30 years of experience in addiction medicine and is passionate about exceeding your expectations.  He is a Diplomate of the American Society of Addiction Medicine and a member of the American Board of Addiction Medicine.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueLogo" translatesAutoresizingMaskIntoConstraints="NO" id="l7S-4N-MCB">
+                                <rect key="frame" x="0.0" y="20" width="48" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LNE-sB-XvA"/>
+                                    <constraint firstAttribute="width" constant="48" id="yNf-uJ-KsV"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MoI-pC-i51">
+                                <rect key="frame" x="12" y="349" width="351" height="219"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="ldT-rh-8YY" customClass="customCell" customModule="CAT_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="351" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ldT-rh-8YY" id="ldc-kD-7SX">
+                                            <rect key="frame" x="0.0" y="0.0" width="351" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBF-dg-9a4" userLabel="FirstView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUA-1B-diC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                                            <color key="backgroundColor" red="0.41036295420000002" green="0.76111196189999997" blue="0.89749599359999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="lUA-1B-diC" secondAttribute="trailing" id="BM8-1G-6wR"/>
+                                                        <constraint firstItem="lUA-1B-diC" firstAttribute="top" secondItem="XBF-dg-9a4" secondAttribute="top" id="LiJ-Ib-rNZ"/>
+                                                        <constraint firstItem="lUA-1B-diC" firstAttribute="centerY" secondItem="XBF-dg-9a4" secondAttribute="centerY" id="MEx-6D-7T9"/>
+                                                        <constraint firstItem="lUA-1B-diC" firstAttribute="centerX" secondItem="XBF-dg-9a4" secondAttribute="centerX" id="bJS-PC-S2Q"/>
+                                                        <constraint firstAttribute="height" constant="40" id="cnr-zC-d3n"/>
+                                                        <constraint firstItem="lUA-1B-diC" firstAttribute="leading" secondItem="XBF-dg-9a4" secondAttribute="leading" id="znN-Z1-uQb"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLe-v4-grp" userLabel="SecondView">
+                                                    <rect key="frame" x="0.0" y="40" width="343" height="0.0"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpP-fr-mpj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="UpP-fr-mpj" firstAttribute="leading" secondItem="nLe-v4-grp" secondAttribute="leading" id="2un-g1-CHM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="UpP-fr-mpj" secondAttribute="trailing" id="3AM-Ow-n12"/>
+                                                        <constraint firstAttribute="height" priority="999" id="HJ8-X9-oSb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="UpP-fr-mpj" secondAttribute="bottom" constant="-60" id="Kgq-oy-DVC"/>
+                                                        <constraint firstItem="UpP-fr-mpj" firstAttribute="top" secondItem="nLe-v4-grp" secondAttribute="top" id="k9S-v8-Ooq"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XBF-dg-9a4" firstAttribute="top" secondItem="ldc-kD-7SX" secondAttribute="topMargin" constant="-8" id="39M-l6-A8m"/>
+                                                <constraint firstItem="nLe-v4-grp" firstAttribute="top" secondItem="ldc-kD-7SX" secondAttribute="topMargin" constant="32" id="WNk-R9-rS4"/>
+                                                <constraint firstItem="nLe-v4-grp" firstAttribute="leading" secondItem="ldc-kD-7SX" secondAttribute="leadingMargin" constant="-8" id="YKK-NQ-w47"/>
+                                                <constraint firstItem="XBF-dg-9a4" firstAttribute="leading" secondItem="ldc-kD-7SX" secondAttribute="leadingMargin" constant="-8" id="iOS-cu-0WT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="XBF-dg-9a4" secondAttribute="trailing" id="tcG-aP-sR9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nLe-v4-grp" secondAttribute="trailing" id="vsT-Tz-a4d"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="firstLabelView" destination="lUA-1B-diC" id="6p2-HR-DSN"/>
+                                            <outlet property="firstView" destination="XBF-dg-9a4" id="eF9-cD-MJh"/>
+                                            <outlet property="secondHeightConstraint" destination="HJ8-X9-oSb" id="HyJ-pn-qYE"/>
+                                            <outlet property="secondLabelView" destination="UpP-fr-mpj" id="oP1-zM-aCl"/>
+                                            <outlet property="secondView" destination="nLe-v4-grp" id="C6l-cB-pYl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="pA1-fy-4Cg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2iK-F0-WZn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IJa-EU-JEY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="3Ky-n0-sdF"/>
+                            <constraint firstItem="MoI-pC-i51" firstAttribute="top" secondItem="SdR-Me-xix" secondAttribute="bottom" id="5Q2-BG-JAf"/>
+                            <constraint firstItem="SdR-Me-xix" firstAttribute="top" secondItem="XEf-cb-VMb" secondAttribute="bottom" constant="8" id="9jZ-b5-BOL"/>
+                            <constraint firstItem="XEf-cb-VMb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ESg-M1-DJT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XEf-cb-VMb" secondAttribute="trailing" constant="-20" id="Eq0-3P-8ct"/>
+                            <constraint firstItem="MoI-pC-i51" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="HcJ-Fm-xfb"/>
+                            <constraint firstItem="XEf-cb-VMb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="JuU-79-8jI"/>
+                            <constraint firstItem="MoI-pC-i51" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="4" id="LYb-8R-aNo"/>
+                            <constraint firstItem="SdR-Me-xix" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Md8-Kb-OqB"/>
+                            <constraint firstItem="l7S-4N-MCB" firstAttribute="top" secondItem="IJa-EU-JEY" secondAttribute="top" id="Mdx-6r-rep"/>
+                            <constraint firstItem="IJa-EU-JEY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="S2u-8i-ilk"/>
+                            <constraint firstItem="l7S-4N-MCB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X7k-Qn-I3H"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MoI-pC-i51" secondAttribute="bottom" constant="99" id="iGD-Id-QFW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IJa-EU-JEY" secondAttribute="trailing" constant="-20" id="qVk-pO-Pc0"/>
+                            <constraint firstItem="XEf-cb-VMb" firstAttribute="top" secondItem="IJa-EU-JEY" secondAttribute="bottom" id="zX7-hV-uv0"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="MoI-pC-i51" id="plq-Or-jce"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540.5" y="411.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blueLogo" width="359" height="351"/>
+        <image name="dna group photo cropped.jpg" width="901" height="386"/>
+    </resources>
+</document>
