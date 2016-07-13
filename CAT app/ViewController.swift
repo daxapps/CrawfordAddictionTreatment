@@ -27,35 +27,35 @@ class ViewController: UIViewController {
     }
     
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count;
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if(selectedIndex == indexPath.row) {
+    func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
+        if(selectedIndex == (indexPath as NSIndexPath).row) {
             return 100;
         } else {
             return 40;
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "cell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! customCell
-        let obj = dataArray[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! customCell
+        let obj = dataArray[(indexPath as NSIndexPath).row]
         cell.firstLabelView.text = obj["FirstName"]
         cell.secondLabelView.text = obj["LastName"]
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if(selectedIndex == indexPath.row) {
+    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+        if(selectedIndex == (indexPath as NSIndexPath).row) {
             selectedIndex = -1
         } else {
-            selectedIndex = indexPath.row
+            selectedIndex = (indexPath as NSIndexPath).row
         }
         self.tableView.beginUpdates()
-        self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic )
+        self.tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic )
         self.tableView.endUpdates()
     }
 
