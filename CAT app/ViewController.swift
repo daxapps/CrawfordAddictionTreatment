@@ -27,11 +27,11 @@ class ViewController: UIViewController {
     }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count;
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if(selectedIndex == (indexPath as NSIndexPath).row) {
             return 100;
         } else {
@@ -39,23 +39,23 @@ class ViewController: UIViewController {
         }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! customCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! customCell
         let obj = dataArray[(indexPath as NSIndexPath).row]
         cell.firstLabelView.text = obj["FirstName"]
         cell.secondLabelView.text = obj["LastName"]
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if(selectedIndex == (indexPath as NSIndexPath).row) {
             selectedIndex = -1
         } else {
             selectedIndex = (indexPath as NSIndexPath).row
         }
         self.tableView.beginUpdates()
-        self.tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic )
+        self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic )
         self.tableView.endUpdates()
     }
 
