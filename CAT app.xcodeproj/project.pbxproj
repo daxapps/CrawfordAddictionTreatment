@@ -13,20 +13,9 @@
 		5FA2032B1D0971C800706442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA203291D0971C800706442 /* Main.storyboard */; };
 		5FA2032D1D0971C800706442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2032C1D0971C800706442 /* Assets.xcassets */; };
 		5FA203301D0971C800706442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2032E1D0971C800706442 /* LaunchScreen.storyboard */; };
-		5FA2033B1D0971C800706442 /* CAT_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2033A1D0971C800706442 /* CAT_appUITests.swift */; };
 		5FA203461D09720C00706442 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA203451D09720C00706442 /* MapKit.framework */; };
 		5FA203511D097B0400706442 /* dna group photo cropped.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FA203501D097B0400706442 /* dna group photo cropped.jpg */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5FA203371D0971C800706442 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5FA2031A1D0971C800706442 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5FA203211D0971C800706442;
-			remoteInfo = "CAT app";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5F910BAA1D35C8A300816D4D /* customCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
@@ -37,9 +26,6 @@
 		5FA2032C1D0971C800706442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FA2032F1D0971C800706442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FA203311D0971C800706442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FA203361D0971C800706442 /* CAT appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CAT appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FA2033A1D0971C800706442 /* CAT_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAT_appUITests.swift; sourceTree = "<group>"; };
-		5FA2033C1D0971C800706442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FA203451D09720C00706442 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5FA203471D09723300706442 /* CAT app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "CAT app.entitlements"; sourceTree = "<group>"; };
 		5FA203501D097B0400706442 /* dna group photo cropped.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dna group photo cropped.jpg"; sourceTree = "<group>"; };
@@ -54,13 +40,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FA203331D0971C800706442 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,7 +48,6 @@
 			children = (
 				5FA203451D09720C00706442 /* MapKit.framework */,
 				5FA203241D0971C800706442 /* CAT app */,
-				5FA203391D0971C800706442 /* CAT appUITests */,
 				5FA203231D0971C800706442 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				5FA203221D0971C800706442 /* CAT app.app */,
-				5FA203361D0971C800706442 /* CAT appUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,15 +74,6 @@
 				5FA203501D097B0400706442 /* dna group photo cropped.jpg */,
 			);
 			path = "CAT app";
-			sourceTree = "<group>";
-		};
-		5FA203391D0971C800706442 /* CAT appUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5FA2033A1D0971C800706442 /* CAT_appUITests.swift */,
-				5FA2033C1D0971C800706442 /* Info.plist */,
-			);
-			path = "CAT appUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,24 +96,6 @@
 			productReference = 5FA203221D0971C800706442 /* CAT app.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5FA203351D0971C800706442 /* CAT appUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5FA203421D0971C800706442 /* Build configuration list for PBXNativeTarget "CAT appUITests" */;
-			buildPhases = (
-				5FA203321D0971C800706442 /* Sources */,
-				5FA203331D0971C800706442 /* Frameworks */,
-				5FA203341D0971C800706442 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5FA203381D0971C800706442 /* PBXTargetDependency */,
-			);
-			name = "CAT appUITests";
-			productName = "CAT appUITests";
-			productReference = 5FA203361D0971C800706442 /* CAT appUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,12 +103,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Jason Crawford";
 				TargetAttributes = {
 					5FA203211D0971C800706442 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = EN498SV6Q8;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.InterAppAudio = {
 								enabled = 0;
@@ -167,10 +118,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					5FA203351D0971C800706442 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 5FA203211D0971C800706442;
 					};
 				};
 			};
@@ -188,7 +135,6 @@
 			projectRoot = "";
 			targets = (
 				5FA203211D0971C800706442 /* CAT app */,
-				5FA203351D0971C800706442 /* CAT appUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +151,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FA203341D0971C800706442 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,23 +164,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FA203321D0971C800706442 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5FA2033B1D0971C800706442 /* CAT_appUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5FA203381D0971C800706442 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5FA203211D0971C800706442 /* CAT app */;
-			targetProxy = 5FA203371D0971C800706442 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5FA203291D0971C800706442 /* Main.storyboard */ = {
@@ -356,6 +279,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JasonCrawford.CAT-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -367,28 +291,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JasonCrawford.CAT-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		5FA203431D0971C800706442 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "CAT appUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.JasonCrawford.CAT-appUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "CAT app";
-			};
-			name = Debug;
-		};
-		5FA203441D0971C800706442 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "CAT appUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.JasonCrawford.CAT-appUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "CAT app";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -409,15 +313,6 @@
 			buildConfigurations = (
 				5FA203401D0971C800706442 /* Debug */,
 				5FA203411D0971C800706442 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5FA203421D0971C800706442 /* Build configuration list for PBXNativeTarget "CAT appUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5FA203431D0971C800706442 /* Debug */,
-				5FA203441D0971C800706442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if(selectedIndex == indexPath.row) {
+        if(selectedIndex == (indexPath as NSIndexPath).row) {
             return 100;
         } else {
             return 40;
@@ -42,17 +42,17 @@ class ViewController: UIViewController {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "cell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! customCell
-        let obj = dataArray[indexPath.row]
+        let obj = dataArray[(indexPath as NSIndexPath).row]
         cell.firstLabelView.text = obj["FirstName"]
         cell.secondLabelView.text = obj["LastName"]
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if(selectedIndex == indexPath.row) {
+        if(selectedIndex == (indexPath as NSIndexPath).row) {
             selectedIndex = -1
         } else {
-            selectedIndex = indexPath.row
+            selectedIndex = (indexPath as NSIndexPath).row
         }
         self.tableView.beginUpdates()
         self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic )
