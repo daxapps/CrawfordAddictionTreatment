@@ -118,8 +118,8 @@ John Crawford, MD has over 30 years of experience in addiction medicine and is p
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="pA1-fy-4Cg"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2iK-F0-WZn"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="BIX-ks-ndm"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6Tb-eu-4Ka"/>
                                 </connections>
                             </tableView>
                         </subviews>

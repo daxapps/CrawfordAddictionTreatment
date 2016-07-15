@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
     var selectedIndex = -1
     
-    var dataArray : [[String:String]] = [["FirstName" : "How do I know if a loved one or myself is addicted to pain medicine?", "LastName" : "Increase in usage, changes in personality and behavior, emotional withdrawal, continuing use after symptoms clear, spend more time seeking painkillers, and neglecting responsibilities."], ["FirstName" : "John", "LastName" : "D"], ["FirstName" : "Bob", "LastName" : "G"]]
+    var dataArray : [[String:String]] = [["FirstName" : "How do I know if a loved one or myself is addicted to pain medicine?", "LastName" : "Increase in usage, changes in personality and behavior, emotional withdrawal,"], ["FirstName" : "John", "LastName" : "D"], ["FirstName" : "Bob", "LastName" : "G"]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,21 +27,21 @@ class ViewController: UIViewController {
     }
     
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArray.count;
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArray.count
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if(selectedIndex == (indexPath as NSIndexPath).row) {
-            return 100;
+            return 100
         } else {
-            return 40;
+            return 40
         }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "cell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! customCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! customCell
         let obj = dataArray[(indexPath as NSIndexPath).row]
         cell.firstLabelView.text = obj["FirstName"]
         cell.secondLabelView.text = obj["LastName"]
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             selectedIndex = (indexPath as NSIndexPath).row
         }
         self.tableView.beginUpdates()
-        self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic )
+        self.tableView.reloadRows(at: [indexPath as IndexPath], with: UITableViewRowAnimation.automatic )
         self.tableView.endUpdates()
     }
 
